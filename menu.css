@@ -1,0 +1,45 @@
+.menu {
+    position: fixed;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.menu>* {
+    margin: 0px;
+    padding: 10px;
+}
+
+.find-div {
+    margin-left: 50%;
+}
+
+.li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.label {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 1s;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: black;
+}
+
+.label:hover,
+.icon:hover {
+    transform: scale(1.1);
+    color: rgb(225, 0, 255)
+}

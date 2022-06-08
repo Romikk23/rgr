@@ -1,0 +1,27 @@
+body::after>#footer {
+    position: absolute;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: gray;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    bottom: 0px;
+    align-content: space-between;
+}
+
+#footer>a {
+    padding: 10px 10px 0px;
+}
+
+.foot {
+    padding-left: 83%;
+}
+
+.icon {
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Твоя марка</title>
+    <script src="https://kit.fontawesome.com/31b4ac0c45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://static.ukrinform.com/photos/2022_04/1649977268-320.jpg">
+    <link rel="stylesheet" type="text/css" target="_blank" href="menu.css">
+    <link rel="stylesheet" type="text/css" target="_blank" href="content.css">
+    <link rel="stylesheet" type="text/css" target="_blank" href="header.css">
+    <script src="js_roz.js"></script>
+    <script src="find.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" target="_blank" href="popup.css">
+    <link rel="stylesheet" type="text/css" target="_blank" href="footer.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4481/4481124.png">
+            <li class="label" id="logo">Твоя марка</li>
+            <a href="menu.html">
+                <li class="li">Головна сторінка</li>
+            </a>
+            <a href="index.html">
+                <li class="li">Про нас</li>
+            </a>
+            <li class="li" id="popup_click" onclick="popup_open()">Зворотній зв'язок</li>
+            <div class="find-div">
+                <i id="find" class="fa fa fa-search"></i>
+                <input id="pole" type="text" placeholder="Type to search" oninput="find()">
+            </div>
+        </ul>
+    </nav>
+    <p id="best_mark">Найпопулярніші марки</p>
+    <div class="header">
+
+        <i id="change-left" class="fa-solid fa-arrow-left-long" onclick="change()"></i>
+        <img id="change-image" class="image" src="https://static.ukrinform.com/photos/2022_04/1649977268-320.jpg">
+        <i id="change-right" class="fa-solid fa-arrow-right-long" onclick="change2()"></i>
+    </div>
+    <hr size="1" width="50%" align="center" color="green">
+    <hr size="1" align="right" height="20%">
+    <p class="prop">Пропозиції</p>
+    <div class="box-content">
+        <div class="content">
+            <a href="marka.html">
+                <img class="image" src="https://static.ukrinform.com/photos/2022_04/1649977268-320.jpg">
+            </a>
+            <li class="name">Руській корабль</li>
+            <li><time> 
+                23/04/2022</time></li>
+            <li>20 000 шт.</li>
+            <li class="cina">299.00 грн</li>
+
+        </div>
+        <div class="content">
+            <img class="image" src="https://img.10ki.biz/img/22/620/620908DB7E49.jpg">
+            <li class="name">Тризуб</li>
+            <li><time>21/01/2022</time></li>
+            <li>40 000 шт.</li>
+            <li class="cina">24.90 грн</li>
+        </div>
+        <div class="content">
+            <img class="image" src="https://vinnytsia-museum.in.ua/images/exhibitions/2014/ukrainian_stamp_01.jpg">
+            <li class="name">30 шагів</li>
+            <li><time>19/03/1918</time></li>
+            <li>30 шт.</li>
+            <li class="cina">1000.00 грн</li>
+        </div>
+        <div class="content">
+            <img class="image" src="https://img.10ki.biz/img/22/620/62090E68B2A2.jpg">
+            <li class="name">Пекін-2022</li>
+            <li><time>23/01/2022</time></li>
+            <li>10 000 шт.</li>
+            <li class="cina">25.90 грн</li>
+        </div>
+        <div class="content">
+            <img class="image" src="https://img.10ki.biz/img/17/58A/58A958ABDA80.jpg">
+            <li class="name">Герб Київщини</li>
+            <li><time>15/02/1993</time></li>
+            <li>30 000 шт.</li>
+            <li class="cina">9.90 грн.</li>
+        </div>
+    </div>
+    <hr size="1" width="50%" align="center" color="green">
+    <hr size="1" align="right" height="20%">
+    <footer id="footer">
+        <a class="icon" href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a class="icon" href="https://uk-ua.facebook.com/">
+            <i class="fa-brands fa-facebook-square fa-2x"></i></a>
+        <a class="icon" href="https://www.viber.com/ru/">
+            <i class="fa-brands fa-viber fa-2x"></i>
+        </a>
+        <p class="foot">@Твоя марка</p>
+    </footer>
+    <div class="popup">
+        <div class="form">
+            <div class="close-btn" onclick="popup_close()">&times;</div>
+            <h2>Зворотній зв'язок</h2>
+            <div class="form-element">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" placeholder="Введіть ім'я">
+            </div>
+            <div class="form-element">
+                <label for="surname">Прізвище</label>
+                <input type="text" id="surname" placeholder="Введіть прізвище">
+            </div>
+            <div class="form-element">
+                <label for="email">Емейл</label>
+                <input type="text" id="email" placeholder="Введіть eмейл">
+            </div>
+            <div class="form-element">
+                <label for="telefon">Телефон</label>
+                <input type="text" id="telefon" placeholder="Введіть телефон">
+            </div>
+            <div class="form-element">
+                <label for="coment">Коментар</label>
+                <textarea type="text" id="coment" placeholder="Введіть коментар"></textarea>
+            </div>
+            <div class="form-element">
+                <button id="send" onclick="popup_close_vid() ">Відправити</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Оформлення замовлення</title>
+    <link rel="stylesheet" type="text/css" target="_blank" href="zakaz.css">
+    <link rel="stylesheet" type="text/css" target="_blank" href="marka.css">
+    <script src="zakaz.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4481/4481124.png">
+            <li class="label">Твоя марка</li>
+            <li class="li">Головна сторінка</li>
+            <li class="li">Про нас</li>
+            <div class="find-div">
+                <i id="find" class="fa fa fa-search"></i>
+                <input id="pole" type="text" placeholder="Type to search" oninput="find()">
+            </div>
+        </ul>
+    </nav>
+    <div id="big-box"style="margin-top: 20%;">
+        <div id="container-1">
+            <div id="cell-info" class="cell-info">
+                <div>Ім'я:</div>
+            </div>
+            <div id="cell-data" class="cell-data">
+                <input type="text" />
+            </div>
+            <div id="cell-info" class="cell-info">
+                <div>Прізвище:</div>
+            </div>
+            <div id="cell-data" class="cell-data">
+                <input type="text" />
+            </div>
+            <div id="cell-info" class="cell-info">
+                <div>Місто:</div>
+            </div>
+            <div id="cell-data" class="cell-data">
+                <input type="text" />
+            </div>
+            <div id="cell-info" class="cell-info">
+                <div>Поштовий індекс:</div>
+            </div>
+            <div id="cell-data" class="cell-data">
+                <input type="text" />
+            </div>
+        </div>
+    </div>
+    <button class="button-40" role="button" style="margin-left: 30%; margin-top:4%" onclick="closeWin()">Оформити</button>
+</body>
+
+</html>

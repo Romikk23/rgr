@@ -1,0 +1,113 @@
+.menu {
+    position: fixed;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+}
+
+.header {
+    top: 0px;
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#set {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.image {
+    width: 80%;
+    padding-top: 10px;
+}
+
+.menu>* {
+    margin: 0px;
+    padding: 10px;
+}
+
+.find-div {
+    margin-left: 60%;
+}
+
+.li:hover {
+    color: red;
+}
+
+.image {
+    transition: 1s;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.label {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#change-left,
+#change-right {
+    margin-top: 160px;
+    padding: 30px 30px;
+}
+
+#change-image {
+    max-height: 300px;
+}
+.price {
+    font-size: 32px;
+    font-style: italic;
+    font-weight:bold;
+}
+.count {
+    font-size: 16px;
+    color:rgb(69, 69, 69);
+    font-weight:200;
+}
+
+/* CSS */
+.button-40 {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-40:hover {
+  background-color: #374151;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
